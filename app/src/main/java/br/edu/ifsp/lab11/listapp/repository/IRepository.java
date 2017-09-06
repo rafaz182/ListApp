@@ -9,8 +9,6 @@ import com.parse.ParseObject;
 
 import java.util.List;
 
-import br.edu.ifsp.lab11.listapp.domain.ParseEntity_TO;
-
 /**
  * An interface that holds all common operations between all services
  *

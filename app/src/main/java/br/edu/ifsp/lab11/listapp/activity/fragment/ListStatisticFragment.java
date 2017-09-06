@@ -8,7 +8,6 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -22,7 +21,6 @@ import com.parse.ParseException;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 
 import br.edu.ifsp.lab11.listapp.R;
 import br.edu.ifsp.lab11.listapp.activity.MainActivity;
@@ -30,7 +28,6 @@ import br.edu.ifsp.lab11.listapp.domain.ItemStatistic_TO;
 import br.edu.ifsp.lab11.listapp.domain.Item_TO;
 import br.edu.ifsp.lab11.listapp.domain.ListStatistic_TO;
 import br.edu.ifsp.lab11.listapp.domain.List_TO;
-import br.edu.ifsp.lab11.listapp.domain.ParseEntity_TO;
 import br.edu.ifsp.lab11.listapp.domain.UserStatistic_TO;
 import br.edu.ifsp.lab11.listapp.domain.User_TO;
 import br.edu.ifsp.lab11.listapp.repository.ItemRepository;
@@ -277,7 +274,7 @@ public class ListStatisticFragment extends Fragment {
                 barGraphSeries.setDrawValuesOnTop(true);
                 barGraphSeries.setValuesOnTopColor(Color.RED);
                 try {
-                    barGraphSeries.setTitle(UserRepository.getRepository().loadById(userStatistic.getUser_id()).getUser_name()); // todo change
+                    barGraphSeries.setTitle(UserRepository.getRepository().loadById(userStatistic.getUser_id()).getUserName()); // todo change
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }
@@ -313,7 +310,7 @@ public class ListStatisticFragment extends Fragment {
         }
 
         if (topBuyerUser != null)
-            this._promptTopBuyer.setText(topBuyerUser.getUser_name());
+            this._promptTopBuyer.setText(topBuyerUser.getUserName());
         this._promptTotalSpent.setText(Double.toString(totalSpent));
 
 

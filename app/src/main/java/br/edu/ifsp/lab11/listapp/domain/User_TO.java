@@ -3,16 +3,12 @@ package br.edu.ifsp.lab11.listapp.domain;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.parse.ParseClassName;
-import com.parse.ParseObject;
-
 /**
  * Created by r0xxFFFF-PC on 22/04/2017.
  *
  * An entity class that represent the user of the application
  */
-@ParseClassName("User_TO")
-public class User_TO extends ParseEntity_TO implements Parcelable {
+public class User_TO extends Entity_TO implements Parcelable {
 
     /**
      * Constant that represents this class name
@@ -22,90 +18,87 @@ public class User_TO extends ParseEntity_TO implements Parcelable {
     /**
      * The full name of the user
      */
-    private String user_name = null;
-    public static final String USER_NAME = "user_name";
+    private String userName = "";
+
+    /**
+     * User nick. Has to be unique in hole application.
+     */
+    private String userNick = "";
 
     /**
      * The email of the user
      */
-    private String email = null;
-    public static final String EMAIL = "email";
+    private String email = "";
 
     /**
      * The password of the user
      */
-    private String password = null;
-    public static final String PASSWORD = "password";
+    private String password = "";
 
     /**
      * An flag that indicates if the email is verified
      */
     private boolean emailVerified = false;
-    public static final String EMAIL_VERIFIED = "emailVerified";
-
-    /**
-     *
-     */
-    private Object authData = null;
-    public static final String AUTH_DATA = "authData";
 
     public User_TO() { super(); }
 
     protected User_TO(Parcel in) {
-        super();
-
-        this.user_name = in.readString();
-        setUser_name(user_name);
-
+        this.userName = in.readString();
+        this.userNick = in.readString();
         this.email = in.readString();
-        setEmail(email);
-
         this.password = in.readString();
-        setPassword(password);
-
         this.emailVerified = in.readByte() != 0;
-        setEmailVerified(emailVerified);
-        //this.authData = in.readParcelable(Object.class.getClassLoader());
     }
 
-    public String getUser_name() {
-        return getString(USER_NAME);
+    public String getUserName() {
+        return this.userName;
     }
 
-    public void setUser_name(String user_name) {
-        put(USER_NAME, user_name);
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getUserNick() {
+        return userNick;
+    }
+
+    public void setUserNick(String userNick) {
+        this.userNick = userNick;
     }
 
     public String getEmail() {
-        return getString(EMAIL);
+        return email;
     }
 
     public void setEmail(String email) {
-        put(EMAIL, email);
+        this.email = email;
     }
 
     public String getPassword() {
-        return getString(PASSWORD);
+        return password;
     }
 
     public void setPassword(String password) {
-        put(PASSWORD, password);
+        this.password = password;
     }
 
     public boolean isEmailVerified() {
-        return getBoolean(EMAIL_VERIFIED);
+        return emailVerified;
     }
 
     public void setEmailVerified(boolean emailVerified) {
-        put(EMAIL_VERIFIED, emailVerified);
+        this.emailVerified = emailVerified;
     }
 
-    public Object getAuthData() {
-        return get(AUTH_DATA);
-    }
-
-    public void setAuthData(Object authData) {
-        put(AUTH_DATA, authData);
+    @Override
+    public String toString() {
+        return "User_TO{" +
+                "userName='" + userName + '\'' +
+                ", userNick='" + userNick + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", emailVerified=" + emailVerified +
+                '}';
     }
 
     @Override
@@ -116,34 +109,22 @@ public class User_TO extends ParseEntity_TO implements Parcelable {
         User_TO user_to = (User_TO) o;
 
         if (emailVerified != user_to.emailVerified) return false;
-        if (user_name != null ? !user_name.equals(user_to.user_name) : user_to.user_name != null)
+        if (userName != null ? !userName.equals(user_to.userName) : user_to.userName != null)
+            return false;
+        if (userNick != null ? !userNick.equals(user_to.userNick) : user_to.userNick != null)
             return false;
         if (email != null ? !email.equals(user_to.email) : user_to.email != null) return false;
-        if (password != null ? !password.equals(user_to.password) : user_to.password != null)
-            return false;
-        return authData != null ? authData.equals(user_to.authData) : user_to.authData == null;
-
+        return password != null ? password.equals(user_to.password) : user_to.password == null;
     }
 
     @Override
     public int hashCode() {
-        int result = user_name != null ? user_name.hashCode() : 0;
+        int result = userName != null ? userName.hashCode() : 0;
+        result = 31 * result + (userNick != null ? userNick.hashCode() : 0);
         result = 31 * result + (email != null ? email.hashCode() : 0);
         result = 31 * result + (password != null ? password.hashCode() : 0);
         result = 31 * result + (emailVerified ? 1 : 0);
-        result = 31 * result + (authData != null ? authData.hashCode() : 0);
         return result;
-    }
-
-    @Override
-    public String toString() {
-        return "User_TO{" +
-                "user_name='" + getUser_name() + '\'' +
-                ", email='" + getEmail() + '\'' +
-                ", password='" + getPassword()+ '\'' +
-                ", emailVerified=" + isEmailVerified() +
-                ", authData=" + this.authData +
-                '}';
     }
 
 
@@ -154,11 +135,11 @@ public class User_TO extends ParseEntity_TO implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(this.user_name);
+        dest.writeString(this.userName);
+        dest.writeString(this.userNick);
         dest.writeString(this.email);
         dest.writeString(this.password);
         dest.writeByte(this.emailVerified ? (byte) 1 : (byte) 0);
-        //dest.writeParcelable(this.authData, flags);
     }
 
     public static final Parcelable.Creator<User_TO> CREATOR = new Parcelable.Creator<User_TO>() {

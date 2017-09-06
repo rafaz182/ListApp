@@ -43,21 +43,6 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
 
-        ParseObject.registerSubclass(User_TO.class);
-        ParseObject.registerSubclass(List_TO.class);
-        ParseObject.registerSubclass(Group_TO.class);
-        ParseObject.registerSubclass(Item_TO.class);
-        ParseObject.registerSubclass(ItemStatistic_TO.class);
-        ParseObject.registerSubclass(UserStatistic_TO.class);
-        ParseObject.registerSubclass(ListStatistic_TO.class);
-
-        Parse.initialize(new Parse.Configuration.Builder(this)
-                .applicationId(getString(R.string.parse_app_id))
-                .server(getString(R.string.parse_server_url))
-                //.clientKey(getString(R.string.parse_master_key))
-                .build()
-        );
-
         mCurrentSession = new SessionManager(getApplicationContext());
     }
 
@@ -93,18 +78,6 @@ public class App extends Application {
 
     public void setCurrentSession(User_TO user){
 
-        mCurrentSession.createLoginSession(user.getUser_name(), user.getEmail(), user.getObjectId());
+        mCurrentSession.createLoginSession(user.getUserName(), user.getEmail(), user.getObjectId());
     }
-
-    /*public User_TO getCurrentUser(){
-
-        if (mCurrentUser != null)
-            return mCurrentUser;
-
-        return null;
-    }*/
-
-   /* public void setCurrentUser(User_TO currentUser){
-        mCurrentUser = currentUser;
-    }*/
 }

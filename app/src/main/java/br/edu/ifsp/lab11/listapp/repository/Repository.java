@@ -1,7 +1,5 @@
 package br.edu.ifsp.lab11.listapp.repository;
 
-import android.util.Log;
-
 import com.parse.FindCallback;
 import com.parse.GetCallback;
 import com.parse.ParseException;
@@ -9,7 +7,6 @@ import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
 import java.lang.reflect.Array;
-import java.lang.reflect.Field;
 import java.lang.reflect.GenericArrayType;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
@@ -20,7 +17,6 @@ import java.util.List;
 import java.util.Map;
 
 import bolts.Task;
-import br.edu.ifsp.lab11.listapp.domain.ParseEntity_TO;
 
 /**
  * Created by r0xxFFFF-PC on 22/04/2017.

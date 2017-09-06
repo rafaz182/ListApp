@@ -80,7 +80,7 @@ public class MemberGroupAdapter extends BaseAdapter {
         }
 
         User_TO member = (User_TO) getItem(position);
-        holder._promptMemberName.setText(member.getUser_name());
+        holder._promptMemberName.setText(member.getUserName());
         holder._promptMemberEmail.setText(member.getEmail());
         holder.objectID = member.getObjectId();
 

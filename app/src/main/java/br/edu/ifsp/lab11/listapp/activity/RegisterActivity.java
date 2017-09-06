@@ -132,7 +132,7 @@ public class RegisterActivity extends AppCompatActivity {
         String password = this._inputPassword.getText().toString();
         String email = this._inputEmail.getText().toString();
 
-        userTO.setUser_name(name);
+        userTO.setUserName(name);
         userTO.setEmail(email);
         userTO.setPassword(password);
         userTO.setEmailVerified(false);

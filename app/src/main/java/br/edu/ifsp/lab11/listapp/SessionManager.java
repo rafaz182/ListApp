@@ -6,7 +6,7 @@ import android.content.SharedPreferences;
 /**
  * Created by r0xxFFFF-PC on 03/06/2017.
  *
- * This class will be edited conforming the application necessities
+ * This class will be edited conforming the application grow
  * TODO implementar singleton nela
  */
 public class SessionManager {

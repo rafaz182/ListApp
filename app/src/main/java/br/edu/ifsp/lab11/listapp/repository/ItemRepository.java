@@ -4,7 +4,6 @@ import com.parse.ParseException;
 import com.parse.ParseQuery;
 
 import br.edu.ifsp.lab11.listapp.domain.Item_TO;
-import br.edu.ifsp.lab11.listapp.domain.ParseEntity_TO;
 
 /**
  * Created by r0xxFFFF-PC on 20/05/2017.
