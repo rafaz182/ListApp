@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ListApp</string>
+
+    <!--Parse backend configuration-->
+    <string name="parse_server_url">https://listapp.ddns.net/parse</string>
+    <string name="parse_app_id">lapp</string>
+    <string name="parse_master_key">aoDKMOUWNEF1029MDAL1KA</string>
+
+    <!--Login Activity String-->
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">Entrar</string>
+    <string name="action_create_account">Não possui conta? Crie uma</string>
+    <string name="error_invalid_email">Endereço de e-mail inválido</string>
+    <string name="error_invalid_password">Senha muito curta</string>
+    <string name="error_incorrect_password">Senha incorreta</string>
+    <string name="error_field_required">Campo requirido</string>
+    <string name="error_no_connection">Sem conexão com a internet</string>
+    <string name="error_user_not_found">Usuário não encontrado</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="prompt_loading_data">Carregando dados da aplicação.</string>
+
+
+    <!--Register Activity String-->
+    <string name="prompt_name">Nome completo</string>
+    <string name="prompt_confirmPassword">Confirmar senha</string>
+    <string name="prompt_createAccount">Crie sua conta</string>
+    <string name="prompt_account_created">Conta criada</string>
+    <string name="prompt_creating_account">Criando conta</string>
+    <string name="action_register">Registrar!</string>
+    <string name="error_doesnt_match">Senha não combina</string>
+    <string name="error_email_aready_exist">Este email já está em uso</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Main Activity String-->
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_refresh_list">Atualizar Lista</string>
+    <string name="action_delete_list">Deletar Lista</string>
+    <string name="action_add_member">Adicionar membro a lista</string>
+
+    <!--Create List Fragment String-->
+    <string name="prompt_createList">Criar nova lista</string>
+    <string name="prompt_listName">Nome da lista</string>
+    <string name="prompt_confirm">Confirmar</string>
+    <string name="prompt_cancel">Cancelar</string>
+
+    <!--List Fragment String-->
+    <string name="prompt_enter_item_name">Entre com o nome do item</string>
+    <string name="prompt_list_update">Lista salva</string>
+    <string name="prompt_no_category">Sem categoria</string>
+    <string name="action_show_list_statistic">Estatística da Lista</string>
+
+    <!--Add Group Member String-->
+    <string name="prompt_loading_members">Carregando membros da lista..</string>
+    <string name="prompt_add_member_header">Gerenciar Membros da Lista</string>
+    <string name="prompt_adding_member_list">Adicionando membros a lista.</string>
+    <string name="prompt_member_email">Email do membro</string>
+    <string name="error_cannot_add_yourself">Não é possível adicionar você mesmo</string>
+    <string name="action_close">Fechar</string>
+
+    <!--Edit Item Fragment String-->
+    <string name="prompt_edit_item_header">Editar Item</string>
+    <string name="prompt_item_name">Nome do item</string>
+    <string name="prompt_item_description">Descrição do item</string>
+    <string name="prompt_item_category">Categoria do item</string>
+    <string name="prompt_item_price">Preço</string>
+    <string name="prompt_item_amount">Quantidade</string>
+    <string name="action_ok">OK</string>
+
+    <!--Exclude Item Fragment String-->
+    <string name="prompt_exclude_item_header">Excluir Item</string>
+    <string name="prompt_exclude_message">Tem certeza que deseja excluir %s?</string>
+
+    <string name="navigation_drawer_open">Abrir navegação em gaveta</string>
+    <string name="navigation_drawer_close">Fechar navegação em gaveta</string>
+
+    <string name="action_example">Exeplo ação</string>
+
+</resources>

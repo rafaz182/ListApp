@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">ListApp</string>
+    <!--Parse backend configuration-->
+    <string name="parse_server_url">https://listapp.ddns.net/parse</string>
+    <string name="parse_app_id">lapp</string>
+    <string name="parse_master_key">aoDKMOUWNEF1029MDAL1KA</string>
+
+    <!--Login Activity String-->
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_create_account">No account yet? Create one</string>
+    <string name="error_invalid_email">E-mail address invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">Incorrect password</string>
+    <string name="error_field_required">Field is required</string>
+    <string name="error_no_connection">No internet connection</string>
+    <string name="error_user_not_found">User not found</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="prompt_loading_data">Loading application data.</string>
+
+
+    <!--Register Activity String-->
+    <string name="prompt_name">Fullname</string>
+    <string name="prompt_confirmPassword">Confirm Password</string>
+    <string name="prompt_createAccount">Create Your Account</string>
+    <string name="prompt_account_created">Account Created</string>
+    <string name="prompt_creating_account">Creating your account</string>
+    <string name="action_register">Register!</string>
+    <string name="error_doesnt_match">Password doesn\'t match</string>
+    <string name="error_email_aready_exist">This email already in use</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Main Activity String-->
+    <string name="title_activity_main">MainActivity</string>
+
+    <!--Create List Fragment String-->
+    <string name="prompt_createList">Create a new list</string>
+    <string name="prompt_listName">List Name</string>
+    <string name="prompt_confirm">Confirm</string>
+    <string name="prompt_cancel">Cancel</string>
+
+    <!--List Fragment String-->
+    <string name="prompt_enter_item_name">Enter the item name</string>
+    <string name="prompt_list_update">List updated</string>
+    <string name="prompt_no_category">No Category</string>
+    <string name="action_add_member">Add member to list</string>
+    <string name="action_refresh_list">Refresh List</string>
+    <string name="action_show_list_statistic">Show List statistic</string>
+    <string name="action_delete_list">Delete List</string>
+
+    <!--Add Group Member String-->
+    <string name="prompt_loading_members">Loading list\'s members.</string>
+    <string name="prompt_add_member_header">Manage list\'s members</string>
+    <string name="prompt_adding_member_list">Adding list\'s member.</string>
+    <string name="prompt_member_email">Member e-mail</string>
+    <string name="error_cannot_add_yourself">You cannot add yourself</string>
+    <string name="action_close">Close</string>
+
+    <!--Edit Item Fragment String-->
+    <string name="prompt_edit_item_header">Edit item</string>
+    <string name="prompt_item_name">Item name</string>
+    <string name="prompt_item_description">Item description</string>
+    <string name="prompt_item_category">Item category</string>
+    <string name="prompt_item_price">Item price</string>
+    <string name="prompt_item_amount">Item totalAmount</string>
+    <string name="action_ok">OK</string>
+    
+    <!--Exclude Item Fragment String-->
+    <string name="prompt_exclude_item_header">Exclude Item</string>
+    <string name="prompt_exclude_message">Are you sure you want to delete %s?</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+</resources>

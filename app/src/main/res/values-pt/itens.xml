@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_itens">
+
+        <!--A-->
+        <item>Absorvente Íntimo</item>
+        <item>Álcool</item>
+        <item>Alho</item>
+        <item>Água</item>
+        <item>Arroz</item>
+        <item>Açúcar</item>
+
+        <!--B-->
+        <item>Banana</item>
+        <item>Batata</item>
+        <item>Berinjela</item>
+        <item>Brócolis</item>
+
+        <!--C-->
+        <item>Café</item>
+        <item>Cerveja</item>
+        <item>Creme de Leite</item>
+        <item>Coca-cola</item>
+        <item>Chocolate</item>
+        <item>Chocolate em Pó</item>
+
+        <!--D-->
+        <item>Desodorante</item>
+
+        <!--E-->
+        <item>Escova de Dente</item>
+
+        <!--F-->
+        <item>Farinha</item>
+        <item>Farofa</item>
+        <item>Feijão</item>
+        <item>Fio Dental</item>
+
+        <!--G-->
+
+        <!--H-->
+
+        <!--I-->
+
+        <!--J-->
+
+        <!--K-->
+
+        <!--L-->
+        <item>Laranja</item>
+        <item>Leite</item>
+
+        <!--M-->
+        <item>Macarrão</item>
+        <item>Maracujá</item>
+        <item>Molho de Tomate</item>
+
+        <!--N-->
+
+        <!--O-->
+        <item>Óleo</item>
+        <item>Ovo</item>
+
+        <!--P-->
+        <item>Papel Higiênico</item>
+        <item>Pasta de Dente</item>
+        <item>Pimenta</item>
+
+        <!--Q-->
+
+        <!--R-->
+
+        <!--S-->
+        <item>Sabonete</item>
+        <item>Sal</item>
+        <item>Salsicha</item>
+        <item>Shampoo</item>
+        <item>Sopa</item>
+
+        <!--T-->
+        <item>Tomate</item>
+
+        <!--U-->
+        <item>Uva</item>
+
+        <!--V-->
+        <item>Vinho</item>
+
+        <!--W-->
+
+        <!--X-->
+
+        <!--Y-->
+
+        <!--Z-->
+
+    </string-array>
+</resources>

@@ -1,0 +1,16 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <item name="ic_menu_camera" type="drawable">@android:drawable/ic_menu_camera</item>
+    <item name="ic_menu_gallery" type="drawable">@android:drawable/ic_menu_gallery</item>
+    <item name="ic_menu_slideshow" type="drawable">@android:drawable/ic_menu_slideshow</item>
+    <item name="ic_menu_manage" type="drawable">@android:drawable/ic_menu_manage</item>
+    <item name="ic_menu_share" type="drawable">@android:drawable/ic_menu_share</item>
+    <item name="ic_menu_send" type="drawable">@android:drawable/ic_menu_send</item>
+    <item name="ic_menu_edit" type="drawable">@android:drawable/ic_menu_edit</item>
+    <item name="ic_menu_add" type="drawable">@drawable/ic_suggestions_add</item>
+    <item name="ic_menu_refresh" type="drawable">@drawable/ic_action_cached</item>
+    <item name="ic_menu_delete" type="drawable">@android:drawable/ic_menu_delete</item>
+    <item name="ic_menu_done" type="drawable">@drawable/ic_input_extract_action_done</item>
+    <item name="ic_menu_add_to_cart" type="drawable">@drawable/ic_action_cart_plus</item>
+    <item name="ic_menus_add_member" type="drawable">@drawable/ic_action_plus</item>
+    <item name="ic_menu_save" type="drawable">@android:drawable/ic_menu_save</item>
+</resources>

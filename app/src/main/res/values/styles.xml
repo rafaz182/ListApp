@@ -1,0 +1,106 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorPrimaryDark">@color/purple_dark</item>
+        <item name="colorAccent">@color/amber</item>
+
+        <item name="colorButtonNormal">@color/amber</item>
+
+        <item name="android:textColorHint">@color/grey200</item>
+        <item name="actionBarDivider">@color/amber</item>
+    </style>
+
+    <!--Theme for Login Activity-->
+    <style name="LoginActivityTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/purple</item>
+        <item name="android:windowAnimationStyle">@style/Slide_RLLR</item>
+    </style>
+
+    <!--Theme for Register Activity-->
+    <style name="RegisterActivityTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/purple</item>
+
+        <!--<item name="actionBarTheme">@style/ActionBarTheme</item>-->
+
+        <item name="android:windowAnimationStyle">@style/Slide_LRRL</item>
+    </style>
+
+    <!--Theme for Main Activity-->
+    <style name="MainActivityTheme" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:windowBackground">@color/purple</item>
+    </style>
+
+    <!--Theme for Create List Fragment-->
+    <style name="CreateListFragmentTheme" parent="Base.Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">@color/purple</item>
+        <item name="colorAccent">@color/amber</item>
+        <item name="android:windowEnterAnimation">@anim/abc_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/abc_popup_exit</item>
+        <item name="windowMinWidthMajor">@dimen/abc_dialog_min_width_major</item>
+        <item name="windowMinWidthMinor">@dimen/abc_dialog_min_width_minor</item>
+    </style>
+
+    <!--Theme for Progress Dialog-->
+    <style name="ListAppProgressDialogTheme" parent="Base.Theme.AppCompat">
+        <item name="android:background">@color/transparent</item>
+        <item name="android:colorBackground">@color/purple</item>
+
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--Theme for Add Group Member Fragment-->
+    <style name="AddGroupMemberFragmentTheme" parent="Base.Theme.AppCompat.Dialog.Alert">
+
+    </style>
+
+<!--
+    <style name="ActionBarTheme" parent="Base.Widget.AppCompat.ActionBar">
+        <item name="android:colorBackground">@color/amber</item>
+    </style>-->
+
+    <!--Show up Left to Right; Fade away Right to Left-->
+    <style name="Slide_LRRL" parent="@android:style/Animation.Activity">
+        <!--How parent fade away when opening-->
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+
+        <!--How this show up when opening-->
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+
+        <!--How this show up when returning-->
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+
+        <!--How child fade away when returning-->
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <!--Show up Right to Left; Fade away Left to Right-->
+    <style name="Slide_RLLR" parent="@android:style/Animation.Activity">
+        <!--How parent fade away when opening-->
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_left</item>
+
+        <!--How this show up when opening-->
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_right</item>
+
+        <!--How this show up when returning-->
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+
+        <!--How child fade away when returning-->
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+<!--
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />-->
+
+</resources>

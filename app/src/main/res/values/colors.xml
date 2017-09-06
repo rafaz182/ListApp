@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="pure_red">#FF0000</color>
+    <color name="pure_green">#00FF00</color>
+    <color name="pure_blue">#0000FF</color>
+
+    <!-- Secondary Colors -->
+    <color name="yellow">#FFFF00</color>
+    <color name="cyan">#00ffff</color>
+    <color name="magenta">#FF00FF</color>
+
+    <!-- Shades of Gray -->
+    <color name="black">#000000</color>
+    <color name="gray_1">#808080</color>
+    <color name="gray_2">#c0c0c0</color>
+    <color name="gray_3">#dfdfdf</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey200">#e0e0e0</color>
+
+    <!-- Basic Colors -->
+    <color name="orange">#FAa500</color>
+    <color name="purple">#683BB7</color>
+    <color name="purple_dark">#553094</color>
+    <color name="purple_ligh">#8d5de2</color>
+    <color name="maroon">#773300</color>
+    <color name="salmon">#FA8072</color>
+    <color name="amber">#FFC70D</color>
+
+    <!-- Alpha Colors 25% Opacity -->
+    <color name="red_alpha25">#40FF0000</color>
+    <color name="green_alpha25">#4000FF00</color>
+    <color name="blue_alpha25">#400000FF</color>
+
+    <!-- Alpha Colors 50% Opacity-->
+    <color name="red_alpha50">#7FFF0000</color>
+    <color name="green_alpha50">#7F00FF00</color>
+    <color name="blue_alpha50">#7F0000FF</color>
+
+    <!-- Alpha Colors 75% Opacity-->
+    <color name="red_alpha75">#BFFF0000</color>
+    <color name="green_alpha75">#BF00FF00</color>
+    <color name="blue_alpha75">#BF0000FF</color>
+    
+    <!--Transparency-->
+    <color name="transparent">#00000000</color>
+
+        <!--<color name="colorPrimary">#3F51B5</color>
+        <color name="colorPrimaryDark">#303F9F</color>
+        <color name="colorAccent">#FF4081</color>
+        <color name="primary_material_dark_1">#8bc34a</color>
+        <color name="primary_material_dark">#8bc34a</color>
+        <color name="primary_dark_material_dark">#689f38</color>
+        <color name="primary_material">#2195f2</color>-->
+
+    <color name="colorPrimary">#2195f2</color>
+    <color name="colorPrimaryLight">#6ec5ff</color>
+    <color name="colorPrimaryDark">#0068bf</color>
+    <color name="textOnPrimary">#e3f2fd</color>
+
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorSecundary">#546e7a</color>
+    <color name="colorSecundaryLight">#819ca9</color>
+    <color name="colorSecundaryDark">#29434e</color>
+    <color name="textOnSecond">@color/white</color>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_category">
+        <item>Foods</item>
+        <item>Babies</item>
+        <item>Drinks</item>
+        <item>Meat</item>
+        <item>Fruits</item>
+        <item>Hygiene</item>
+        <item>Vegetables</item>
+        <item>Cleaning</item>
+        <item>Perfumery</item>
+        <item>Soda</item>
+        <item>Juice</item>
+    </string-array>
+</resources>

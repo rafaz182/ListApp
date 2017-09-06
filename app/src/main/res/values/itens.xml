@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_itens">
+
+        <!--A-->
+        <item>Alcohol</item>
+
+        <!--B-->
+        <item>Banana</item>
+        <item>Beans</item>
+        <item>Beer</item>
+        <item>Broccoli</item>
+
+        <!--C-->
+        <item>Coca-cola</item>
+        <item>Coffee</item>
+
+        <!--D-->
+        <item>Dental Thread</item>
+        <item>Deodorant</item>
+
+        <!--E-->
+        <item>Egg</item>
+        <item>Eggplant</item>
+
+        <!--F-->
+        <item>Farofa</item>
+        <item>Flour</item>
+
+        <!--G-->
+        <item>Garlic</item>
+
+        <!--H-->
+
+        <!--I-->
+
+        <!--J-->
+
+        <!--K-->
+
+        <!--L-->
+
+        <!--M-->
+        <item>Milk</item>
+        <item>Milk Cream</item>
+
+        <!--N-->
+
+        <!--O-->
+        <item>Oil</item>
+        <item>Orange</item>
+
+        <!--P-->
+        <item>Passion Fruit</item>
+        <item>Pepper</item>
+        <item>Potato</item>
+
+        <!--R-->
+        <item>Rice</item>
+
+        <!--S-->
+        <item>Salt</item>
+        <item>Sausage</item>
+        <item>Shampoo</item>
+        <item>Soap</item>
+        <item>Soup</item>
+        <item>Spaghetti</item>
+        <item>Sugar</item>
+
+        <!--T-->
+        <item>Tampons</item>
+        <item>Toilet Paper</item>
+        <item>Tomato</item>
+        <item>Tomato Sauce</item>
+        <item>Toothbrush</item>
+        <item>Toothpaste</item>
+
+        <!--U-->
+
+        <!--V-->
+
+        <!--W-->
+        <item>Water</item>
+        <item>Wine</item>
+
+        <!--X-->
+
+        <!--Y-->
+
+        <!--Z-->
+
+    </string-array>
+</resources>
